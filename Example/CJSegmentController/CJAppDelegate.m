@@ -2,17 +2,35 @@
 //  CJAppDelegate.m
 //  CJSegmentController
 //
-//  Created by Ji zhongyi on 11/01/2016.
+//  Created by Ji zhongyi on 10/31/2016.
 //  Copyright (c) 2016 Ji zhongyi. All rights reserved.
 //
 
 #import "CJAppDelegate.h"
 
+#import "CJSegmentViewController.h"
+
+#import "TestVCOne.h"
+#import "TestVCZero.h"
+
 @implementation CJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+//    UINavigationController *navigationController = [[UIStoryboard storyboardWithName:@"SegmentController" bundle:nil] instantiateInitialViewController];
+//    CJSegmentViewController *segmentVC = (CJSegmentViewController *)[navigationController topViewController];
+//    [segmentVC setViewControllers:@[[[TestVCZero alloc] init], [[TestVCOne alloc] init],[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]]];
+    
+    CJSegmentViewController *segmentVC = [[CJSegmentViewController alloc] initWithViewControllers:@[[[TestVCZero alloc] init], [[TestVCOne alloc] init],[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:segmentVC];
+    
+    [self.window setRootViewController:navigationController];
+    [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 

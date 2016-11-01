@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CJSegmentController: a58b8a6738dc66d68ace4d37cddb652d6da4c785
+  CJSegmentController: 6b3b1611fdb8cae1c61d0c120715b99e7263d1db
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b

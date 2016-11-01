@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6CE322D08454A6E98BA94DB0CE0E8948F312480A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F459B78BFC12F925D62936716F5C3297BC6496A9" : 9223372036854775807,
+    "6CE322D08454A6E98BA94DB0CE0E8948F312480A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "57DC4A53-BB80-4184-9E77-468EBA5B229A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F459B78BFC12F925D62936716F5C3297BC6496A9" : "..",
+    "6CE322D08454A6E98BA94DB0CE0E8948F312480A" : "CJSegmentController\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CJSegmentController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/CJSegmentController.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jzy476731162\/CJSegmentController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6CE322D08454A6E98BA94DB0CE0E8948F312480A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jzy476731162\/CJSpecs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F459B78BFC12F925D62936716F5C3297BC6496A9"
+    }
+  ]
+}
