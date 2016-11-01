@@ -1,0 +1,22 @@
+{
+  "name": "CJSegmentController",
+  "version": "0.1.0",
+  "summary": "A short description of CJSegmentController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CJSegmentController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ji zhongyi": "jizhongyi@lngtop.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CJSegmentController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CJSegmentController/Classes/**/*"
+}

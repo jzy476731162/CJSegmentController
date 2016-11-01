@@ -1,0 +1,6 @@
+framework module Pods_CJSegmentController_Tests {
+  umbrella header "Pods-CJSegmentController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
