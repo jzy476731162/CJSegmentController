@@ -12,13 +12,17 @@
 
 
 /**
- leftBarButtonItem
+ leftBarButtonItem:
+ 
+ You should set this property with your left barbuttonItem if you want this barbutton show on the left of Parent navigationBar
  */
 @property (nonatomic, strong) UIBarButtonItem *leftBarItem;
 
 
 /**
  rightBarButtonItem
+ 
+ You should set this property with your right barbuttonItem if you want this barbutton show on the right of Parent navigationBar
  */
 @property (nonatomic, strong) UIBarButtonItem *rightBarItem;
 

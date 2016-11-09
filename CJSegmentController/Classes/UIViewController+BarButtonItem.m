@@ -38,7 +38,7 @@ static const NSString *leftKey = @"CJLeftItemKey";
 }
 
 - (NSString *)segmentTitle {
-    return self.title ? : @"标题";
+    return self.title ? : @"title";
 }
 
 - (void)didMoveToParentViewController:(UIViewController *)parent {
