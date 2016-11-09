@@ -59,7 +59,6 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
         NSMutableArray *titleList = [NSMutableArray new];
         for (UIViewController *vc in self.vcList) {
             [titleList addObject:[vc segmentTitle]];
-            vc.view;
         }
         
         UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:titleList];
