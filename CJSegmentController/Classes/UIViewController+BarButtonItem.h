@@ -10,8 +10,18 @@
 
 @interface UIViewController (BarButtonItem)
 
+
+/**
+ leftBarButtonItem
+ */
 @property (nonatomic, strong) UIBarButtonItem *leftBarItem;
+
+
+/**
+ rightBarButtonItem
+ */
 @property (nonatomic, strong) UIBarButtonItem *rightBarItem;
+
 
 /**
  Don't Call by yourself

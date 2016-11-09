@@ -24,14 +24,19 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
 
 
 @property (nonatomic, strong) NSMutableArray *vcList;
+
+@property (nonatomic, strong) UIColor *tintColor;
+
 @end
 
 @implementation CJSegmentViewController
 
 
-- (instancetype)initWithViewControllers:(NSArray *)viewControllers {
+- (instancetype)initWithViewControllers:(NSArray *)viewControllers TintColor:(UIColor *)tintColor{
     self = [super init];
     if (self) {
+        _tintColor = tintColor;
+        
         UIView *container = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _vcList = [NSMutableArray arrayWithArray:viewControllers];
         [self.view addSubview:container];
@@ -42,6 +47,7 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
         [constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[container]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(container)]];
         self.container = container;
         [self.view addConstraints:constraints];
+        
     }
     return self;
 }
@@ -53,6 +59,7 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
         NSMutableArray *titleList = [NSMutableArray new];
         for (UIViewController *vc in self.vcList) {
             [titleList addObject:[vc segmentTitle]];
+            vc.view;
         }
         
         UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:titleList];
@@ -61,15 +68,23 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
         self.navigationItem.titleView = seg;
         [seg addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
         seg.selectedSegmentIndex = 0;
+        if (!self.tintColor) {
+            self.tintColor = [UIColor blackColor];
+        }
+        [seg setTintColor:self.tintColor];
         self.segment = seg;
         
-        [self displayContentController:self.vcList[0]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self displayContentController:self.vcList[0]];
+        });
     }
-    
-    
 }
 
 - (void)displayContentController:(UIViewController *)content {
+    for (UIView *subview in self.container.subviews) {
+        [subview removeFromSuperview];
+    }
+    
     [self addChildViewController:content];
     content.view.frame = self.container.frame;
     [self.container addSubview:content.view];
@@ -93,7 +108,7 @@ typedef NS_ENUM(NSInteger, SHSegmentDirection) {
         oldVC.view.frame = OldVCEndFrame;
     } completion:^(BOOL finished) {
         [oldVC removeFromParentViewController];
-        [newVC didMoveToParentViewController:self];
+        [self displayContentController:newVC];
     }];
     
 }

@@ -11,6 +11,6 @@
 @interface CJSegmentViewController : UIViewController
 
 //required
-- (instancetype)initWithViewControllers:(NSArray *)viewControllers;
+- (instancetype)initWithViewControllers:(NSArray *)viewControllers TintColor:(UIColor *)tintColor;
 
 @end

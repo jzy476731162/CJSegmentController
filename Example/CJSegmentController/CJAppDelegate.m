@@ -24,7 +24,7 @@
 //    CJSegmentViewController *segmentVC = (CJSegmentViewController *)[navigationController topViewController];
 //    [segmentVC setViewControllers:@[[[TestVCZero alloc] init], [[TestVCOne alloc] init],[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]]];
     
-    CJSegmentViewController *segmentVC = [[CJSegmentViewController alloc] initWithViewControllers:@[[[TestVCZero alloc] init], [[TestVCOne alloc] init],[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]]];
+    CJSegmentViewController *segmentVC = [[CJSegmentViewController alloc] initWithViewControllers:@[[[TestVCZero alloc] init], [[TestVCOne alloc] init],[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController]] TintColor:[UIColor blueColor]];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:segmentVC];
     
     [self.window setRootViewController:navigationController];

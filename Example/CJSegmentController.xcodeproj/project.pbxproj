@@ -136,12 +136,12 @@
 		6003F593195388D20070C39A /* Example for CJSegmentController */ = {
 			isa = PBXGroup;
 			children = (
+				433313A01DC8796400A5B538 /* TestVCZero.h */,
+				433313A11DC8796400A5B538 /* TestVCZero.m */,
 				4333139C1DC8796400A5B538 /* TestVCOne.h */,
 				4333139D1DC8796400A5B538 /* TestVCOne.m */,
 				4333139E1DC8796400A5B538 /* TestVCTwo.h */,
 				4333139F1DC8796400A5B538 /* TestVCTwo.m */,
-				433313A01DC8796400A5B538 /* TestVCZero.h */,
-				433313A11DC8796400A5B538 /* TestVCZero.m */,
 				6003F59C195388D20070C39A /* CJAppDelegate.h */,
 				6003F59D195388D20070C39A /* CJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -257,7 +257,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Ji zhongyi";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = D4D9AJ9755;
+					};
 					6003F5AD195388D20070C39A = {
+						LastSwiftMigration = 0810;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -535,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = D4D9AJ9755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CJSegmentController/CJSegmentController-Prefix.pch";
 				INFOPLIST_FILE = "CJSegmentController/CJSegmentController-Info.plist";
@@ -551,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = D4D9AJ9755;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CJSegmentController/CJSegmentController-Prefix.pch";
 				INFOPLIST_FILE = "CJSegmentController/CJSegmentController-Info.plist";
@@ -581,6 +587,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJSegmentController_Example.app/CJSegmentController_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -602,6 +609,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJSegmentController_Example.app/CJSegmentController_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
